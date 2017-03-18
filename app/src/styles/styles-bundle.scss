@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'typicons';
+  font-weight: normal;
+  font-style: normal;
+  src: url('fonts/typicons.eot');
+  src: url('fonts/typicons.eot') format('embedded-opentype'),
+       url('fonts/typicons.woff') format('woff'),
+       url('fonts/typicons.ttf') format('truetype'),
+       url('fonts/typicons.svg') format('svg');
+}
+@import "./../entry-point/landing/LandingPage.scss";
+@import "./components.scss";
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+}

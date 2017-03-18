@@ -1,0 +1,37 @@
+.ico {
+    font-family: 'typicons';
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    height: 1em;
+    font-size: 3em;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    color: #000;
+    opacity: 0.7;
+}
+
+.RoundedBlackButton {
+    color: black;
+    font-size: 30px;
+    font-family: Arial;
+    letter-spacing: 0px;
+    display: flex;
+    font-weight: 500;
+    border: 2px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+
+    &:hover {
+        background-color:black;
+        color: white;
+    }
+}

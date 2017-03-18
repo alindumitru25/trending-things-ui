@@ -1,0 +1,28 @@
+{
+  "name": "social-line",
+  "version": "0.0.1",
+  "author": "Alin Dumitru",
+  "dependencies": {
+    "@types/react": "^15.0.16",
+    "@types/react-dom": "^0.14.23",
+    "gulp": "^3.9.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.1.2",
+    "css-loader": "^0.27.2",
+    "extract-text-webpack-plugin": "^1.0.0",
+    "file-loader": "^0.10.1",
+    "gulp": "^3.9.1",
+    "node-libs-browser": "^2.0.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.3",
+    "source-map-loader": "^0.2.0",
+    "style-loader": "^0.13.2",
+    "typescript": "^2.2.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.9.0"
+  }
+}

@@ -1,1 +1,1 @@
-trending-things-ui
+social-line-ui
