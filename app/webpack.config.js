@@ -1,3 +1,5 @@
+var webpack = require("webpack");
+
 module.exports = {
     entry: "./src/entry-point/index.tsx",
     output: {
@@ -31,11 +33,17 @@ module.exports = {
     // assume a corresponding global variable exists and use that instead.
     // This is important because it allows us to avoid bundling all of our
     // dependencies, which allows browsers to cache those libraries between builds.
-    externals: {
-        "react": "React",
-        "react-dom": "ReactDOM"
-    },
+    // @TODO Remove this when adding script to sails home.esj
+    //externals: {
+    //    "react": "React",
+    //    "react-dom": "ReactDOM"
+    //},
     devServer: {
         inline: true
-    }
+    },
+    plugins: [
+        new webpack.ProvidePlugin({
+            "React": "react",
+        }),
+    ]
 };

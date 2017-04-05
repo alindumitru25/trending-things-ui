@@ -1,8 +1,8 @@
 import * as React from "react";
 
-export class LandingPage extends React.Component<{}, {}> {
+class LandingPage extends React.Component<Props, {}> {
     renderAbsoluteLogo() {
-        return <img src="../../images/logo.png" className="LandingPage-AbsoluteLogo" />
+        return <img src="images/logo.png" className="LandingPage-AbsoluteLogo" />
     }
 
     renderLoginInput() {
@@ -37,11 +37,26 @@ export class LandingPage extends React.Component<{}, {}> {
         </div>
     }
 
-    render() {
-        return <div className="LandingPage">
-            {this.renderSignUpText()}
-            {this.renderNeedHelp()}
+    renderContent() {
+        if (!this.props.isConnected) {
+            return <div className="spinner LandingPage-Loader"></div>;
+        }
+
+        return <div>
             {this.renderLoginInput()}
         </div>
     }
+
+    render() {
+        return <div className="LandingPage">
+            {this.renderAbsoluteLogo()}
+            {this.renderContent()}
+        </div>
+    }
 }
+
+interface Props {
+    isConnected: boolean
+}
+
+export default LandingPage;
